@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algorithms</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="./icons/javascript-logo-0.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img style="width: 40px" src="./icons/javascript-logo-0.png" alt="" />
+        <p>algorithms.</p>
+      </div>
+      <div class="navbar">
+        <nav>
+          <a href="#first">First</a>
+          <a href="#second">Second</a>
+          <a href="#third">Third</a>
+          <a href="#fourth">Fourth</a>
+ 
+        </nav>
+        <div class="btns button-85">
+          <a
+            target="_blank"
+            href="https://github.com/dilmurodivcc/JS-12.git
+          "
+            ><i class="fa-brands fa-github"></i
+          ></a>
+
+          <i style="cursor: pointer" class="fa-solid fa-moon moon-icon"></i>
+        </div>
+      </div>
+    </header>
+    <h1>Algorithms by Abdulloh Sodiqov</h1>
+    <div class="container">
+      <section id="first">
+        <div id="content">
+          <h2 class="limited-line">
+            <span>Recur10.</span>. K sonining raqamlar yig'indisini takrorlanish
+            operatoridan foydalanmagan holda hisoblovchi butun toifadagi
+            DigitSum(K) rekursiv funksiyasi tuzilsin. Shu funksiya yordamida
+            berilgan 3 ta butun sonning raqamlari yig'indisi topilsin.
+          </h2>
+          <br />
+          <input id="inputValue" type="number" placeholder="1 - son" />
+          <input id="inputValue-1" type="number" placeholder="2 - son" />
+          <input id="inputValue-2" type="number" placeholder="3 - son" />
+          <button class="button-85" role="button" onclick="m1()">
+            Hisoblash
+          </button>
+          <div
+            style="text-align: start; padding: 10px"
+            class="output"
+            id="output"
+          ></div>
+        </div>
+        <img
+          class="code"
+          style="
+            width: 45%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          "
+          src="./images/Screenshot_1.png"
+          alt=""
+        />
+      </section>
+      <section id="second">
+        <div id="content">
+          <h2 class="limited-line">
+            <span>Masala-2 </span>
+            Fibonachi sonlari ketma-ketligidagining N - elementni hisoblovchi
+            butun toifadagi Fib1(N) rekursiv funksiya tuzilsin (N butun son): F
+            * 1 = F * 2 = 1 , FK FK-2+FK-1, K = 3, 4
+          </h2>
+          <br />
+          <input id="inputValue2" type="number" placeholder="Ex: 7" />
+          <button class="button-85" role="button" onclick="m2()">
+            Hisoblash
+          </button>
+          <div
+            style="text-align: start; padding: 10px"
+            class="output"
+            id="output2"
+          ></div>
+        </div>
+        <img
+          class="code"
+          style="
+            width: 45%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          "
+          src="./images/Screenshot_2.png"
+          alt=""
+        />
+      </section>
+      <section id="third">
+        <div id="content">
+          <h2 class="limited-line">
+            <span>Recur1. </span>N! = 1 ^ pi * 2 ^ pi ...*N faktorialni
+            hisoblovchi haqiqiy toifadagi Fact(N) rekursiv funksiyasi tuzilsin.
+            (N > 0 butun toifadagi parameter ). Shu funksiya yordamida berilgan
+            3 ta sonning faktoriallari hisoblansin. 
+          </h2>
+          <br />
+
+          <input id="inputValue3" type="number" placeholder="Ex: 3 4 5 8 9" />
+          <input id="inputValue3-1" type="number" placeholder="Ex: 3 4 5 8 9" />
+          <input id="inputValue3-2" type="number" placeholder="Ex: 3 4 5 8 9" />
+
+          <button class="button-85" role="button" onclick="m3()">
+            Hisoblash
+          </button>
+
+          <div
+            class="output"
+            style="text-align: start; padding: 10px"
+            id="output3"
+          >
+            <p>Output</p>
+          </div>
+        </div>
+        <img
+          class="code"
+          style="
+            width: 45%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          "
+          src="./images/Screenshot_3.png"
+          alt=""
+        />
+      </section>
+      <section id="fourth">
+        <div id="content">
+          <h2 class="limited-line">
+            <span>Recur1. </span>N! = 1 ^ pi * 2 ^ pi ...*N faktorialni
+            hisoblovchi haqiqiy toifadagi Fact(N) rekursiv funksiyasi tuzilsin.
+            (N > 0 butun toifadagi parameter ). Shu funksiya yordamida berilgan
+            3 ta sonning faktoriallari hisoblansin. 
+          </h2>
+          <br />
+
+          <input id="inputValue3" type="number" placeholder="Ex: 3 4 5 8 9" />
+          <input id="inputValue3-1" type="number" placeholder="Ex: 3 4 5 8 9" />
+          <input id="inputValue3-2" type="number" placeholder="Ex: 3 4 5 8 9" />
+
+          <button class="button-85" role="button" onclick="m3()">
+            Hisoblash
+          </button>
+
+          <div
+            class="output"
+            style="text-align: start; padding: 10px"
+            id="output3"
+          >
+            <p>Output</p>
+          </div>
+        </div>
+        <img
+          class="code"
+          style="
+            width: 45%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          "
+          src="./images/Screenshot_3.png"
+          alt=""
+        />
+      </section>
+      <div class="swiper mySwiper">
+        <h1>Let's review a little Array Methods.</h1>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <b>push<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p><span>Ma'nosi:</span> Arrayga oxiridan element qo'shadi.</p>
+            <img src="./images/Screenshot_9.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>pop<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p>
+              <span>Ma'nosi:</span> Arrayning oxiridan elementni olib tashlaydi
+              va o'sha elementni qaytaradi.
+            </p>
+            <img src="./images/Screenshot_10.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>shift<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p>
+              <span>Ma'nosi:</span> Arrayning boshidan elementni olib tashlaydi
+              va o'sha elementni qaytaradi.
+            </p>
+            <img src="./images/Screenshot_11.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>unshift<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p><span>Ma'nosi:</span> Arrayning boshiga element qo'shadi.</p>
+            <img src="./images/Screenshot_12.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>concat<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p>
+              <span>Ma'nosi:</span> Ikki yoki undan ortiq arrayni birlashtiradi.
+            </p>
+            <img src="./images/Screenshot_13.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>slice<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p>
+              <span>Ma'nosi:</span> Arrayning bir qismini kesib oladi. Asl
+              arrayni o'zgartirmaydi.
+            </p>
+            <img src="./images/Screenshot_14.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>splice<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p>
+              <span>Ma'nosi:</span> Arraydan elementlarni olib tashlash yoki
+              yangi elementlar qo'shish.
+            </p>
+            <img src="./images/Screenshot_15.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>indexOf<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p>
+              <span>Ma'nosi:</span> Arrayda ma'lum bir elementning indeksini
+              qaytaradi.
+            </p>
+            <img src="./images/Screenshot_16.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>includes<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p>
+              <span>Ma'nosi:</span> Arrayda ma'lum bir element bor-yo'qligini
+              tekshiradi.
+            </p>
+            <img src="./images/Screenshot_17.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>reverse<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p><span>Ma'nosi:</span>Arrayni teskari tartibda qaytaradi.</p>
+            <img src="./images/Screenshot_18.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>join<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p>
+              <span>Ma'nosi:</span> Array elementlarini string sifatida
+              birlashtiradi, istalgan ajratuvchi bilan.
+            </p>
+            <img src="./images/Screenshot_19.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>map<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p>
+              <span>Ma'nosi:</span> Arrayning har bir elementi ustida funksiya
+              bajaradi va yangi array qaytaradi.
+            </p>
+            <img src="./images/Screenshot_20.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>filter<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p>
+              <span>Ma'nosi:</span> Arraydan shartga mos keluvchi elementlarni
+              qaytaradi.
+            </p>
+            <img src="./images/Screenshot_21.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>reduce<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p>
+              <span>Ma'nosi:</span> Array elementlarini yagona qiymatga
+              qisqartiradi.
+            </p>
+            <img src="./images/Screenshot_22.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>forEach<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p>
+              <span>Ma'nosi:</span>Arrayning har bir elementi uchun funksiya
+              bajaradi. Hech qanday qiymat qaytarmaydi.
+            </p>
+            <img src="./images/Screenshot_23.png" alt="" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <footer>
+      <div class="logo">
+        <img style="width: 40px" src="./icons/javascript-logo-0.png" alt="" />
+        <p>algorithms.</p>
+      </div>
+      <div style="margin-left: 10%" class="navbar">
+        <nav>
+          <a href="#first">First</a>
+          <a href="#second">Second</a>
+          <a href="#third">Third</a>
+
+        </nav>
+      </div>
+      <p>&copy; 2024 JavaScript Algorithms by Mr.Abdulloh.</p>
+    </footer>
+    <button id="backToTopBtn">
+      <i><i class="fa-solid fa-arrow-up"></i></i>
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./focus.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
