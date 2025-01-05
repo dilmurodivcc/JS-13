@@ -1,49 +1,86 @@
 function m1() {
-  const a = +document.getElementById("inputValue").value;
-  const b = +document.getElementById("inputValue-1").value;
-  const c = +document.getElementById("inputValue-2").value;
-
-  function digitSum(K) {
-    if (K === 0) return false;
-    return (K % 10) + digitSum(Math.floor(K / 10));
-  }
-  function totalSum(a, b, c) {
-    return digitSum(a) + digitSum(b) + digitSum(c);
-  }
-  document.getElementById(
-    "output"
-  ).innerHTML = `Raqamlar yig'indisi: ${totalSum(a, b, c)}`;
+  const input = document.getElementById("inputValue").value;
+  const start = +document.getElementById("start").value;
+  const end = +document.getElementById("end").value;
+  const arr = input.trim().split(" ");
+  Array.prototype.customSlice = function (start, end) {
+    const result = [];
+    start = start || 0;
+    end = end || this.length;
+    for (let i = start; i < end; i++) {
+      result.push(this[i]);
+    }
+    return result;
+  };
+  document.getElementById("output").innerHTML = `
+  Custom: ${arr.customSlice(start, end)}
+   <br>
+  Original: ${arr.slice(start, end)}`;
 }
 
 function m2() {
-  const n = +document.getElementById("inputValue2").value;
-  function Fib1(n) {
-    if (n === 1 || n === 2) return 1;
-    return Fib1(n - 2) + Fib1(n - 1); 
-  }
+  const input = document.getElementById("inputValue2").value;
+  const arr = input.trim().split(" ").map(Number);
+  Array.prototype.even = function () {
+    const result = [];
 
-  document.getElementById(
-    "output2"
-  ).innerHTML = `Fibonachining ${n}-elementi: ${Fib1(n)}`;
+    for (let i = 0; i < this.length; i++) {
+      if (this[i] % 2 === 0) {
+        result.push(this[i]);
+      }
+    }
+    return result;
+  };
+  document.getElementById("output2").innerHTML = `
+    Juft sonlar: [${arr.even()}]
+`;
 }
 
 function m3() {
-  const num1 = +document.getElementById("inputValue3").value;
-  const num2 = +document.getElementById("inputValue3-1").value;
-  const num3 = +document.getElementById("inputValue3-2").value;
-  function Fact(N) {
-    if (N === 1 || N === 0) return 1; 
-    return N * Fact(N - 1); 
-  }
-  const fact1 = Fact(num1);
-  const fact2 = Fact(num2);
-  const fact3 = Fact(num3);
-  document.getElementById("output3").innerHTML = `
-    ${num1}! = ${fact1} <br>
-    ${num2}! = ${fact2} <br>
-    ${num3}! = ${fact3}
-  `;
+  const person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 25,
+    job: "Developer",
+    country: "USA",
+    get info() {
+      return `Name: ${this.firstName} ${this.lastName},
+       <br> Age: ${this.age},
+       <br> Job: ${this.job}, 
+       <br> Country: ${this.country}`;
+    },
+    set change({ firstName, lastName, age }) {
+      if (firstName) this.firstName = firstName;
+      if (lastName) this.lastName = lastName;
+      if (age) this.age = age;
+    },
+  };
+  document.getElementById(
+    "output3"
+  ).innerHTML = `<span>GET:</span> ${person.info} <br> <br>`;
+  person.change = { firstName: "Jane", lastName: "Smith", age: 30 };
+  document.getElementById(
+    "output3"
+  ).innerHTML += `<span>SET:</span> ${person.info}`;
 }
+
+function m4() {
+  const j1 = +document.getElementById("s1").value;
+  const j2 = +document.getElementById("s2").value;
+  const j3 = +document.getElementById("s3").value;
+  const j4 = +document.getElementById("s4").value;
+  const j5 = +document.getElementById("s5").value;
+  let correctCount = 0;
+  if (j1 === 132) correctCount++;
+  if (j2 === 3) correctCount++;
+  if (j3 === 0.3) correctCount++;
+  if (j4 === 1995) correctCount++;
+  if (j5 === 1993) correctCount++;
+  document.getElementById(
+    "output4"
+  ).innerHTML = `Sizning javoblaringiz: ${correctCount}/5. Sizning baho: ${correctCount}.`;
+}
+
 
 
 // SOME FUNCTION -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-

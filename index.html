@@ -41,7 +41,6 @@
           <a href="#second">Second</a>
           <a href="#third">Third</a>
           <a href="#fourth">Fourth</a>
- 
         </nav>
         <div class="btns button-85">
           <a
@@ -60,15 +59,13 @@
       <section id="first">
         <div id="content">
           <h2 class="limited-line">
-            <span>Recur10.</span>. K sonining raqamlar yig'indisini takrorlanish
-            operatoridan foydalanmagan holda hisoblovchi butun toifadagi
-            DigitSum(K) rekursiv funksiyasi tuzilsin. Shu funksiya yordamida
-            berilgan 3 ta butun sonning raqamlari yig'indisi topilsin.
+            <span>Masala1.</span>Arrayga yana custom metod qo'shing. Vazifasi
+            Array.slice bilan bir xil bo'lsin. Custom yozilishi shart.
           </h2>
           <br />
-          <input id="inputValue" type="number" placeholder="1 - son" />
-          <input id="inputValue-1" type="number" placeholder="2 - son" />
-          <input id="inputValue-2" type="number" placeholder="3 - son" />
+          <input id="inputValue" type="text" placeholder="Ex: Hi there hello" />
+          <input id="start" type="text" placeholder="start" />
+          <input id="end" type="text" placeholder="end" />
           <button class="button-85" role="button" onclick="m1()">
             Hisoblash
           </button>
@@ -92,13 +89,11 @@
       <section id="second">
         <div id="content">
           <h2 class="limited-line">
-            <span>Masala-2 </span>
-            Fibonachi sonlari ketma-ketligidagining N - elementni hisoblovchi
-            butun toifadagi Fib1(N) rekursiv funksiya tuzilsin (N butun son): F
-            * 1 = F * 2 = 1 , FK FK-2+FK-1, K = 3, 4
+            <span>Masala2. </span>
+            Arrayni ichidagi juft sonlarni qaytaradigan metod qo'shing
           </h2>
           <br />
-          <input id="inputValue2" type="number" placeholder="Ex: 7" />
+          <input id="inputValue2" type="text" placeholder="Ex: 7" />
           <button class="button-85" role="button" onclick="m2()">
             Hisoblash
           </button>
@@ -122,16 +117,11 @@
       <section id="third">
         <div id="content">
           <h2 class="limited-line">
-            <span>Recur1. </span>N! = 1 ^ pi * 2 ^ pi ...*N faktorialni
-            hisoblovchi haqiqiy toifadagi Fact(N) rekursiv funksiyasi tuzilsin.
-            (N > 0 butun toifadagi parameter ). Shu funksiya yordamida berilgan
-            3 ta sonning faktoriallari hisoblansin. 
+            <span>Masala3. </span>. Objectni to'liq ismi va u haqida bor
+            ma'lumotlarni chiqaradigan getter yarating, objectdagi 3 ta asosiy
+            ma'lumotlarni o'zgartiradigan setter yarating
           </h2>
           <br />
-
-          <input id="inputValue3" type="number" placeholder="Ex: 3 4 5 8 9" />
-          <input id="inputValue3-1" type="number" placeholder="Ex: 3 4 5 8 9" />
-          <input id="inputValue3-2" type="number" placeholder="Ex: 3 4 5 8 9" />
 
           <button class="button-85" role="button" onclick="m3()">
             Hisoblash
@@ -156,42 +146,39 @@
           alt=""
         />
       </section>
-      <section id="fourth">
-        <div id="content">
-          <h2 class="limited-line">
-            <span>Recur1. </span>N! = 1 ^ pi * 2 ^ pi ...*N faktorialni
-            hisoblovchi haqiqiy toifadagi Fact(N) rekursiv funksiyasi tuzilsin.
-            (N > 0 butun toifadagi parameter ). Shu funksiya yordamida berilgan
-            3 ta sonning faktoriallari hisoblansin. 
-          </h2>
+      <section style="width: 70%; flex-direction: column;"  id="fourth">
+        <div  style="width: 100%; text-align: start !important;" id="content">
+          <h2 style="margin-bottom: 5px;" class="limited-line"><span>1-savol. </span> 11 * 12 = ?</h2>
+          <input id="s1" type="number" placeholder="Javobingizni kiriting" />
           <br />
-
-          <input id="inputValue3" type="number" placeholder="Ex: 3 4 5 8 9" />
-          <input id="inputValue3-1" type="number" placeholder="Ex: 3 4 5 8 9" />
-          <input id="inputValue3-2" type="number" placeholder="Ex: 3 4 5 8 9" />
-
-          <button class="button-85" role="button" onclick="m3()">
+          <br />
+          <h2 style="margin-bottom: 5px;" class="limited-line"><span>2-savol. </span> sqrt(9) = ?</h2>
+          <input id="s2" type="number" placeholder="Javobingizni kiriting" />
+          <br />
+          <br />
+          <h2 style="margin-bottom: 5px;" class="limited-line"><span>3-savol. </span> 0.1 + 0.2 = ?</h2>
+          <input id="s3" type="number" placeholder="Javobingizni kiriting" />
+          <br />
+          <br />
+          <h2 style="margin-bottom: 5px;" class="limited-line"><span>4-savol. </span> JavaScript nechanchi yilda chiqarilgan?</h2>
+          <input id="s4" type="number" placeholder="Javobingizni kiriting" />
+          <br />
+          <br />
+          <h2 style="margin-bottom: 5px;" class="limited-line"><span>5-savol. </span> HTML nechanchi yilda chiqarilgan?</h2>
+          <input id="s5" type="number" placeholder="Javobingizni kiriting" />
+          <br />
+          <br />
+          <button style="margin-top: 20px;" class="button-85" role="button" onclick="m4()">
             Hisoblash
           </button>
-
-          <div
-            class="output"
-            style="text-align: start; padding: 10px"
-            id="output3"
-          >
-            <p>Output</p>
-          </div>
+          <div class="output" id="output4"></div>
         </div>
-        <img
-          class="code"
-          style="
-            width: 45%;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-          "
-          src="./images/Screenshot_3.png"
-          alt=""
-        />
+        <img  
+        style="
+          width: 90%;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        " src="./images/Screenshot_4.png" alt="">
       </section>
       <div class="swiper mySwiper">
         <h1>Let's review a little Array Methods.</h1>
@@ -320,7 +307,6 @@
           <a href="#first">First</a>
           <a href="#second">Second</a>
           <a href="#third">Third</a>
-
         </nav>
       </div>
       <p>&copy; 2024 JavaScript Algorithms by Mr.Abdulloh.</p>

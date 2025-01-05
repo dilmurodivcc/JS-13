@@ -281,6 +281,8 @@ button:hover {
   display: flex;
   transition: all 0.3s ease-in-out;
   align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
